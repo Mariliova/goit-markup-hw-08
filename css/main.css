@@ -485,6 +485,11 @@ summary {
   display: list-item;
 }
 
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
 .portfolio .card__link, .socials__link, .contacts__address, .contacts__phone, .contacts__email, .team .card__link, .site-nav__link, .logo {
   text-decoration: none;
 }
@@ -496,9 +501,23 @@ summary {
 }
 
 .portfolio__container, .page-footer__container, .clients__container, .team__container, .activities__container, .features__container, .page-header__container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__container, .page-footer__container, .clients__container, .team__container, .activities__container, .features__container, .page-header__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__container, .page-footer__container, .clients__container, .team__container, .activities__container, .features__container, .page-header__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__container, .page-footer__container, .clients__container, .team__container, .activities__container, .features__container, .page-header__container {
+    width: 1200px;
+  }
 }
 
 .filters__btn, .modal .form__btn, .page-footer .form__btn, .hero__btn {
@@ -542,11 +561,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* xl */
-/* lg */
-/* md */
-/* sm */
-/* xs */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
