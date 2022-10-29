@@ -8,8 +8,10 @@
 
 .page-header__container {
   @extend %container;
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 145px 1fr;
+  column-gap: 93px;
 }
 
 .page-header__navbar {
@@ -17,3 +19,8 @@
   align-items: center;
 }
 
+.menu-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}

@@ -10,38 +10,39 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="page-header__navbar">
-          <a class="logo page-header__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
+        <a class="logo page-header__logo" href="./index.html"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <div class="menu-container">
+          <nav class="page-header__navbar">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--active" href="./index.html">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
+            </ul>
+          </nav>
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--active" href="./index.html">Студія</a>
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a class="auth-nav__link" href="mailto:info@devstudio.com"
+                ><svg class="auth-nav__icon" width="16" height="12">
+                  <use href="images/symbol-defs.svg#icon-envelope" /></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+            <li class="auth-nav__item">
+              <a class="auth-nav__link" href="tel:+380961111111"
+                ><svg class="auth-nav__icon" width="10" height="16">
+                  <use href="images/symbol-defs.svg#icon-phone" /></svg
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
           </ul>
-        </nav>
-
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="mailto:info@devstudio.com"
-              ><svg class="auth-nav__icon" width="16" height="12">
-                <use href="images/symbol-defs.svg#icon-envelope" /></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+380961111111"
-              ><svg class="auth-nav__icon" width="10" height="16">
-                <use href="images/symbol-defs.svg#icon-phone" /></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -86,7 +87,9 @@
                 </svg>
               </div>
               <h3 class="item__title">ПЛАНУВАННЯ</h3>
-              <p class="item__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="item__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li class="item">
               <div class="item__thumb">
@@ -108,7 +111,13 @@
           <h2 class="activities__title">Чим ми займаємося</h2>
           <ul class="activities__list">
             <li class="activities__item">
-              <img class="activities__img" src="./images/img1.jpg" alt="кодування" width="370" height="294" />
+              <img
+                class="activities__img"
+                src="./images/img1.jpg"
+                alt="кодування"
+                width="370"
+                height="294"
+              />
               <div class="activities__thumb">
                 <p class="activities__text">Десктопні додатки</p>
               </div>
@@ -124,7 +133,13 @@
               <div class="activities__thumb"><p class="activities__text">Мобільні додатки</p></div>
             </li>
             <li class="activities__item">
-              <img class="activities__img" src="./images/img3.jpg" alt="дизайн" width="370" height="294" />
+              <img
+                class="activities__img"
+                src="./images/img3.jpg"
+                alt="дизайн"
+                width="370"
+                height="294"
+              />
               <div class="activities__thumb">
                 <p class="activities__text">Дизайнерські рішення</p>
               </div>
@@ -150,41 +165,25 @@
                 <p class="card__text" lang="en">Product Designer</p>
                 <ul class="card__icons">
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-insta" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
                     ></a>
@@ -205,41 +204,25 @@
                 <p class="card__text" lang="en">Frontend Developer</p>
                 <ul class="card__icons">
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-insta" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
                     ></a>
@@ -260,41 +243,25 @@
                 <p class="card__text" lang="en">Marketing</p>
                 <ul class="card__icons">
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-insta" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
                     ></a>
@@ -309,41 +276,25 @@
                 <p class="card__text" lang="en">UI Designer</p>
                 <ul class="card__icons">
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-insta" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook" /></svg
                     ></a>
                   </li>
                   <li class="card__item">
-                    <a
-                      class="card__link"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer noopener nofollow"
+                    <a class="card__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                       ><svg class="card__icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
                     ></a>
@@ -360,72 +311,42 @@
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client1" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client2" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client3" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client4" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client5" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
+              <a class="clients__link" href="" target="_blank" rel="noreferrer noopener nofollow">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-client6" />
                 </svg>
@@ -466,31 +387,19 @@
           <b class="socials__text">приєднуйтесь</b>
           <ul class="socials__icons">
             <li class="socials__item">
-              <a
-                class="socials__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
+              <a class="socials__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                 ><svg class="socials__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-insta" /></svg
               ></a>
             </li>
             <li class="socials__item">
-              <a
-                class="socials__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
+              <a class="socials__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                 ><svg class="socials__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter" /></svg
               ></a>
             </li>
             <li class="socials__item">
-              <a
-                class="socials__link"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
+              <a class="socials__link" href="" target="_blank" rel="noreferrer noopener nofollow"
                 ><svg class="socials__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook" /></svg
               ></a>

@@ -566,12 +566,14 @@ body {
 }
 
 .page-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-template-columns: 145px 1fr;
+  -webkit-column-gap: 93px;
+     -moz-column-gap: 93px;
+          column-gap: 93px;
 }
 
 .page-header__navbar {
@@ -581,6 +583,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -612,8 +626,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
-  margin-left: 93px;
 }
 
 .site-nav__link {

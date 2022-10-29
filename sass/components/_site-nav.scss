@@ -5,8 +5,8 @@
 .site-nav {
   @extend %list;
   display: flex;
+  align-items: center;
   gap: 50px;
-  margin-left: 93px;
 }
 
 .site-nav__link {
