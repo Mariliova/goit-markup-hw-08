@@ -4,14 +4,22 @@
 
 .page-header {
   border-bottom: 1px solid $color-line-first;
+  @include md-max {
+    position: relative;
+  }
 }
 
 .page-header__container {
   @extend %container;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: 145px 1fr;
-  column-gap: 93px;
+  @include md-min {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    column-gap: 93px;
+    justify-content: start;
+  }
 }
 
 .page-header__navbar {
@@ -20,7 +28,9 @@
 }
 
 .page-header__menu {
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: none;
+  @include md-min {
+    display: flex;
+    align-items: center;
+  }
 }

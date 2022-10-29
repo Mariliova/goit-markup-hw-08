@@ -1,0 +1,137 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+@use '../utils/media-mixins' as *;
+
+.menu-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @include md-min {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $color-white;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-site-nav {
+  @extend %list;
+}
+
+.mobile-site-nav__item:not(:first-child) {
+  margin-top: 32px;
+}
+
+.mobile-site-nav__link {
+  @extend %link;
+  display: block;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  color: currentColor;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  &--active {
+    color: $color-accent;
+  }
+}
+
+.mobile-auth-nav {
+  @extend %list;
+}
+
+.mobile-auth-nav__item:not(:first-child) {
+  margin-top: 32px;
+}
+.mobile-auth-nav__item:last-child {
+  margin-top: 64px;
+}
+
+.mobile-auth-nav__tel {
+  @extend %link;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $color-accent;
+}
+
+.mobile-auth-nav__mail {
+  @extend %link;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $color-secondary;
+}
+
+.mobile-auth-nav__socials {
+  @extend %list;
+  display: flex;
+}
+
+.mobile-auth-nav__socials-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-auth-nav__socials-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-auth-nav__socials-link {
+  @extend %link;
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $color-accent;
+}

@@ -9,35 +9,55 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header__container">
-        <nav class="page-header__navbar">
-          <a class="logo page-header__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
+      <div class="page-header__container">
+        <a class="logo page-header__logo" href="./index.html"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__brg"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
           >
+            <use href="./images/symbol-defs.svg#icon-menu" />
+          </svg>
+        </button>
+        <div class="page-header__menu">
+          <nav class="page-header__navbar">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
+            </ul>
+          </nav>
 
-          <ul class="site-nav">
-            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студія</a></li>
-            <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфоліо</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a class="auth-nav__link" href="mailto:info@devstudio.com"
+                ><svg class="auth-nav__icon" width="16" height="12">
+                  <use href="images/symbol-defs.svg#icon-envelope" /></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="auth-nav__item">
+              <a class="auth-nav__link" href="tel:+380961111111"
+                ><svg class="auth-nav__icon" width="10" height="16">
+                  <use href="images/symbol-defs.svg#icon-phone" /></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="mailto:info@devstudio.com"
-              ><svg class="auth-nav__icon" width="16" height="12">
-                <use href="images/symbol-defs.svg#icon-envelope" /></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+380961111111"
-              ><svg class="auth-nav__icon" width="10" height="16">
-                <use href="images/symbol-defs.svg#icon-phone" /></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -341,5 +361,63 @@
         </form>
       </div>
     </footer>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg
+          class="menu-toggle__cross"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/symbol-defs.svg#icon-cross" />
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <nav class="mobile-menu__navbar">
+          <ul class="mobile-site-nav">
+            <li class="mobile-site-nav__item">
+              <a class="mobile-site-nav__link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-site-nav__item">
+              <a class="mobile-site-nav__link mobile-site-nav__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-site-nav__item">
+              <a class="mobile-site-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-auth-nav">
+          <li class="mobile-auth-nav__item">
+            <a class="mobile-auth-nav__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-auth-nav__item">
+            <a class="mobile-auth-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="mobile-auth-nav__item">
+            <ul class="mobile-auth-nav__socials">
+              <li class="mobile-auth-nav__socials-item">
+                <a class="mobile-auth-nav__socials-link" href="">Instagram</a>
+              </li>
+              <li class="mobile-auth-nav__socials-item">
+                <a class="mobile-auth-nav__socials-link" href="">Twitter</a>
+              </li>
+              <li class="mobile-auth-nav__socials-item">
+                <a class="mobile-auth-nav__socials-link" href="">Facebook</a>
+              </li>
+              <li class="mobile-auth-nav__socials-item">
+                <a class="mobile-auth-nav__socials-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>

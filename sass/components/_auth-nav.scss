@@ -7,9 +7,14 @@
   display: flex;
   gap: 50px;
   margin-left: auto;
+  @include lg-md {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .auth-nav__link {
+  @extend %link;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -34,8 +39,8 @@
   fill: $color-secondary;
   transition: fill 250ms $cubic;
 
- .auth-nav__link:hover &,
- .auth-nav__link:focus & {
+  .auth-nav__link:hover &,
+  .auth-nav__link:focus & {
     fill: $color-accent;
   }
 }
