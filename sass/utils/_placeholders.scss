@@ -14,15 +14,15 @@
 %container {
   margin: 0 auto;
   padding: 0 15px;
-@include sm-min {
-  width: $sm;
-}
-@include md-min {
-  width: $md;
-}
-@include lg-min {
-  width: $lg;
-}
+  @include sm-min {
+    width: $sm;
+  }
+  @include md-min {
+    width: $md;
+  }
+  @include lg-min {
+    width: $lg;
+  }
 }
 
 %btn {
