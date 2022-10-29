@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.page-header {
+  border-bottom: 1px solid $color-line-first;
+}
+
+.page-header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__navbar {
+  display: flex;
+  align-items: center;
+}
+

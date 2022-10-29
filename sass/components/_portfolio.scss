@@ -1,0 +1,136 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.portfolio {
+  @extend %section;
+}
+
+.portfolio__container {
+  @extend %container;
+}
+
+.portfolio__title {
+  @extend %visually-hidden;
+}
+
+.filters {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filters__btn {
+  @extend %btn;
+  font-weight: 500;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+
+  background-color: $color-bg-secondary;
+  box-shadow: none;
+  transition: background-color 250ms $cubic, color 250ms $cubic, box-shadow 250ms $cubic;
+
+  &:first-of-type {
+    padding: 6px 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio {
+  & .card {
+    background-color: $color-bg-primary;
+    flex-basis: calc((100% - (30px * 2)) / 3);
+  }
+
+  & .card__link {
+    @extend %link;
+    display: block;
+    width: 100%;
+
+    box-shadow: none;
+    transition: box-shadow 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  & .card__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .card__img {
+    display: block;
+  }
+
+  & .card__description {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: $color-white;
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms $cubic;
+  }
+
+  & .card__link:hover .card__description,
+  & .card__link:focus .card__description {
+    transform: translateY(0%);
+  }
+
+  & .card__group {
+    padding: 20px 24px;
+    border-left: 1px solid $color-line-second;
+    border-right: 1px solid $color-line-second;
+    border-bottom: 1px solid $color-line-second;
+  }
+
+  & .card__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: $color-primary;
+  }
+
+  & .card__text {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $color-secondary;
+  }
+}

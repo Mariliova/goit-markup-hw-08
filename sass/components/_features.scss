@@ -1,0 +1,55 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.features {
+  @extend %section;
+}
+
+.features__container {
+    @extend %container;
+}
+
+.features__title {
+  @extend %visually-hidden;
+}
+
+.features__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}
+
+.features {
+  & .item {
+    flex-basis: calc((100% - (30px * 3)) / 4);
+  }
+
+  & .item__thumb {
+    background-color: $color-bg-secondary;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  & .item__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  & .item__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $color-secondary;
+  }
+}

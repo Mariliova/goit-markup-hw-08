@@ -1,0 +1,7 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+body {
+    color: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+}

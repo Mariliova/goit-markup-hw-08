@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.contacts__content {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contacts__list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contacts__address {
+  @extend %link;
+  color: $color-white;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+.contacts__phone {
+  @extend %link;
+  color: $color-whitish;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+.contacts__email {
+  @extend %link;
+  display: block;
+  color: $color-whitish;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

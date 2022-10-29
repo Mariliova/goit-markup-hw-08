@@ -1,0 +1,64 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.page-footer {
+  & .form__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $color-white;
+  }
+  & .form__thumb {
+    display: flex;
+    gap: 12px;
+  }
+  & .form__input {
+    display: block;
+    padding: 15px 16px;
+    width: 358px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $color-bg-dark;
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+  }
+  & .form__btn {
+    @extend %btn;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 28px;
+
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $color-white;
+    background-color: $color-accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent-hover;
+    }
+  }
+  & .form__btn-icon {
+    fill: $color-white;
+  }
+}

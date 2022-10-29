@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+.page-footer {
+  background-color: $color-bg-dark;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__container {
+  @extend %container;
+  display: flex;
+  gap: 92px;
+  align-items: baseline;
+}
