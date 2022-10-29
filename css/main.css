@@ -585,7 +585,7 @@ body {
           align-items: center;
 }
 
-.menu-container {
+.page-header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
