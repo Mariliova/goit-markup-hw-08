@@ -1,7 +1,11 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+@use '../utils/media-mixins' as *;
 
 .activities {
+  @include lg-max {
+    display: none;
+  }
   @extend %section;
   padding-top: 0;
 }

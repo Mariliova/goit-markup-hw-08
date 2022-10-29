@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+@use '../utils/media-mixins' as *;
 
 .backdrop {
   position: fixed;

@@ -1,6 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
-
+@use '../utils/media-mixins' as *;
 .team {
   @extend %section;
   background-color: $color-bg-secondary;

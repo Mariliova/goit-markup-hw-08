@@ -542,6 +542,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -764,6 +769,11 @@ body {
 
 .activities {
   padding-top: 0;
+}
+@media screen and (max-width: 1199.8px) {
+  .activities {
+    display: none;
+  }
 }
 
 .activities__list {

@@ -1,0 +1,127 @@
+@use "../utils/variables" as *;
+$diff: 0.2px;
+
+/* xl */
+@mixin xl-min {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin xl-max {
+  @media screen and (max-width: ($xl - $diff)) {
+    @content;
+  }
+}
+
+@mixin xl-lg {
+  @media screen and (max-width: ($xl - $diff)) and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xl-md {
+  @media screen and (max-width: ($xl - $diff)) and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin xl-sm {
+  @media screen and (max-width: ($xl - $diff)) and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xl-xs {
+  @media screen and (max-width: ($xl - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+/* lg */
+@mixin lg-min {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin lg-max {
+  @media screen and (max-width: ($lg - $diff)) {
+    @content;
+  }
+}
+
+@mixin lg-md {
+  @media screen and (max-width: ($lg - $diff)) and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg-sm {
+  @media screen and (max-width: ($lg - $diff)) and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin lg-xs {
+  @media screen and (max-width: ($lg - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+/* md */
+@mixin md-min {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  @media screen and (max-width: ($md - $diff)) {
+    @content;
+  }
+}
+
+@mixin md-sm {
+  @media screen and (max-width: ($md - $diff)) and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md-xs {
+  @media screen and (max-width: ($md - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+/* sm */
+@mixin sm-min {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin sm-max {
+  @media screen and (max-width: ($sm - $diff)) {
+    @content;
+  }
+}
+
+@mixin sm-xs {
+  @media screen and (max-width: ($sm - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+/* xs */
+@mixin xs-min {
+  @media screen and (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin xs-max {
+  @media screen and (max-width: ($xs - $diff)) {
+    @content;
+  }
+}

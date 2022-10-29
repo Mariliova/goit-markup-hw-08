@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+@use '../utils/media-mixins' as *;
 
 .page-footer {
   background-color: $color-bg-dark;

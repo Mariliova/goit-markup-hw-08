@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+@use '../utils/media-mixins' as *;
 
 .page-header {
   border-bottom: 1px solid $color-line-first;
