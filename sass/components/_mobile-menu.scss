@@ -18,12 +18,17 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
+
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: $color-white;
-  z-index: 999;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: $color-white;
   transform: translateX(100%);
   transition: transform 250ms $cubic;
 }
@@ -41,13 +46,6 @@
   &:focus {
     fill: $color-accent;
   }
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
 }
 
 .mobile-site-nav {
@@ -128,6 +126,7 @@
 .mobile-auth-nav__socials-link {
   @extend %link;
   display: block;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
