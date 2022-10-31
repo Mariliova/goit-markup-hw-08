@@ -3,6 +3,11 @@
 @use '../utils/media-mixins' as *;
 
 .page-footer {
+  & .form {
+    @include sm-max {
+      width: 100%;
+    }
+  }
   & .form__title {
     display: block;
     margin-bottom: 20px;
@@ -12,17 +17,37 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
+
+    @include lg-min {
+      text-align: left;
+    }
 
     color: $color-white;
   }
+
   & .form__thumb {
     display: flex;
-    gap: 12px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    @include lg-min {
+      flex-direction: row;
+      gap: 12px;
+    }
   }
+
   & .form__input {
     display: block;
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
+    
+    @include lg-md {
+      width: 450px;
+    }
+    @include lg-min {
+      width: 358px;
+    }
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -37,12 +62,16 @@
       letter-spacing: 0.03em;
     }
   }
+
   & .form__btn {
     @extend %btn;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 28px;
+    @include md-max {
+      max-width: 200px;
+    }
 
     font-weight: 700;
     line-height: 1.88;
@@ -59,6 +88,7 @@
       background-color: $color-accent-hover;
     }
   }
+
   & .form__btn-icon {
     fill: $color-white;
   }

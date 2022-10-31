@@ -10,7 +10,31 @@
 
 .page-footer__container {
   @extend %container;
-  display: flex;
-  gap: 92px;
-  align-items: baseline;
+  display: grid;
+  
+  @include md-max {
+    grid-template-areas: 'con' 'soc' 'frm';
+    row-gap: 60px;
+  }
+  @include lg-md {
+    grid-template-areas: 'con soc' 'frm frm';
+    row-gap: 60px;
+  }
+  @include lg-min {
+    grid-template-areas: 'con soc frm';
+    align-items: baseline;
+    column-gap: 92px;
+  }
+}
+
+.contacts {
+  grid-area: con;
+}
+
+.socials {
+  grid-area: soc;
+}
+
+.page-footer .form {
+  grid-area: frm;
 }

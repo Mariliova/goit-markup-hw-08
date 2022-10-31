@@ -5,3 +5,7 @@ body {
     color: var(--color-primary);
     font-family: 'Roboto', sans-serif;
 }
+
+body.moda-open {
+    overflow: hidden;
+}

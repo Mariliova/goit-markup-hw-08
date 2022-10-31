@@ -16,9 +16,13 @@
   align-items: center;
   @include md-min {
     display: grid;
+    grid-template-columns: 134px 1fr;
+    column-gap: 87px;
+    justify-content: start;
+  }
+  @include lg-min {
     grid-template-columns: 145px 1fr;
     column-gap: 93px;
-    justify-content: start;
   }
 }
 

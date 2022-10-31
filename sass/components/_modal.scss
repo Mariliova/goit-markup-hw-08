@@ -8,10 +8,12 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms $cubic, visibility 250ms $cubic;
+
+  overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
@@ -19,12 +21,24 @@
     visibility: hidden;
   }
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+
+  @include md-xs {
+    max-width: 450px;
+  }
+
+  @include lg-md {
+    width: 450px;
+  }
+
+  @include lg-min {
+    width: 528px;
+  }
 
   background: $color-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -37,6 +51,7 @@
     transform: translate(-50%, -50%) scale(0.9);
   }
 }
+
 .modal__btn {
   position: absolute;
   top: 8px;
@@ -51,11 +66,13 @@
   align-items: center;
   cursor: pointer;
 }
+
 .modal__icon {
   fill: $color-black;
   transition: fill 250ms $cubic;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: $color-accent;
   }
 }

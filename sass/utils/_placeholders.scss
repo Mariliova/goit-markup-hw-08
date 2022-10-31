@@ -14,6 +14,7 @@
 %container {
   margin: 0 auto;
   padding: 0 15px;
+  
   @include sm-min {
     width: $sm;
   }
@@ -34,17 +35,28 @@
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include lg-min {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 %section-title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
   margin-top: 0;
   margin-bottom: 50px;
+
+  @include lg-min {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 %visually-hidden {

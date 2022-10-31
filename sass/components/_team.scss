@@ -1,6 +1,7 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
 @use '../utils/media-mixins' as *;
+
 .team {
   @extend %section;
   background-color: $color-bg-secondary;
@@ -18,8 +19,13 @@
   @extend %list;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+
+  @include md-min {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -27,8 +33,13 @@
 
 .team {
   & .card {
+    @include lg-md {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include lg-min {
+      flex-basis: calc((100% - (30px * 3)) / 4);
+    }
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - (30px * 3)) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $color-bg-primary;

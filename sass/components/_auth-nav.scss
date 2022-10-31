@@ -20,10 +20,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   gap: 10px;
+
+  @include lg-min {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   color: $color-secondary;
   box-shadow: none;

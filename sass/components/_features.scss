@@ -7,7 +7,7 @@
 }
 
 .features__container {
-    @extend %container;
+  @extend %container;
 }
 
 .features__title {
@@ -18,11 +18,21 @@
   @extend %list;
   display: flex;
   gap: 30px;
+  flex-direction: column;
+  @include md-min {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .features {
   & .item {
-    flex-basis: calc((100% - (30px * 3)) / 4);
+    @include lg-md {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include lg-min {
+      flex-basis: calc((100% - (30px * 3)) / 4);
+    }
   }
 
   & .item__thumb {
@@ -42,6 +52,11 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
+
+    @include md-min {
+      text-align: left;
+    }
   }
 
   & .item__text {

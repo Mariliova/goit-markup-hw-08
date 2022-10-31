@@ -4,7 +4,7 @@
 
 .modal {
   & .form {
-    width: 528px;
+    width: 100%;
     padding: 40px;
 
     background: $color-white;
@@ -19,9 +19,13 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @include lg-min {
+      line-height: 1.15;
+    }
   }
 
   & .form__list {
@@ -120,10 +124,15 @@
   }
 
   & .form__text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
+    @include lg-min {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+ 
     color: color-secondary;
   }
 
