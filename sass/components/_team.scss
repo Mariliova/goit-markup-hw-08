@@ -46,7 +46,7 @@
   }
 
   & .card__img {
-    display: block;
+    @extend %img;
   }
 
   & .card__content {

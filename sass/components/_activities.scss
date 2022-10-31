@@ -29,7 +29,7 @@
 }
 
 .activities__img {
-  display: block;
+  @extend %img;
 }
 
 .activities__thumb {
