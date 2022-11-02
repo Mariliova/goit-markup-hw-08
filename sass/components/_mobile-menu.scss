@@ -61,9 +61,14 @@
   display: block;
 
   font-weight: 500;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  @mixin sm-min {
   font-size: 40px;
   line-height: 1.175;
-  letter-spacing: 0.02em;
+  }
 
   color: currentColor;
   transition: color 250ms $cubic;
@@ -92,9 +97,13 @@
 .mobile-auth-nav__tel {
   @extend %link;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 375px) {
+    font-size: 34px;
+  }
 
   color: $color-accent;
 }
@@ -112,6 +121,17 @@
 .mobile-auth-nav__socials {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  @media screen and (max-width: 435px) {
+    margin-left: -10px;
+  }
+}
+
+.mobile-auth-nav__socials-item:first-child {
+  @media screen and (max-width: 435px) {
+    padding-left: 10px;
+  }
 }
 
 .mobile-auth-nav__socials-item:not(:first-child) {

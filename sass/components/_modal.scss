@@ -9,6 +9,8 @@
   bottom: 0;
   right: 0;
 
+  padding: 93px 15px;
+
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms $cubic, visibility 250ms $cubic;
@@ -23,16 +25,17 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
-  @include md-xs {
+  @include sm-max {
     max-width: 450px;
+    width: 100%;
+    position: relative;
   }
 
-  @include lg-md {
+  @include sm-min {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     width: 450px;
   }
 
