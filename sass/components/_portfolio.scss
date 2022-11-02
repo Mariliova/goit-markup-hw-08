@@ -60,7 +60,6 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  align-items: center;
   @include lg-md {
     justify-content: start;
   }

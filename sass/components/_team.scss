@@ -50,7 +50,14 @@
   }
 
   & .card__content {
-    padding: 30px;
+    padding: 30px 122px;
+    
+    @include md-min {
+      padding: 30px 74px;
+    }
+    @include lg-min {
+      padding: 30px;
+    }
   }
 
   & .card__title {
